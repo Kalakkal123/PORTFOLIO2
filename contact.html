@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - T Karthikeyan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">KK</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌓</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <canvas id="pulseCanvas" class="pulse-canvas"></canvas>
+        <div class="container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">Let's connect and create something together</p>
+        </div>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-card-title">Email</h3>
+                    <a href="mailto:kalakkalkarthi6838@gmail.com" class="contact-link">
+                        kalakkalkarthi6838@gmail.com
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h3 class="contact-card-title">GitHub</h3>
+                    <a href="https://github.com/kalakkal123" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="contact-link">
+                        github.com/kalakkal123
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3 class="contact-card-title">LinkedIn</h3>
+                    <span class="contact-link unavailable">Currently unavailable</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Icons -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="section-title">Follow Me</h2>
+            <div class="social-icons">
+                <a href="https://instagram.com/kalakkal_karthikeyan_official_" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="social-link"
+                   aria-label="Instagram">
+                    <span class="social-icon">📷</span>
+                    <span class="social-label">Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/@KalakkalKarthikeyan" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="social-link"
+                   aria-label="YouTube">
+                    <span class="social-icon">▶️</span>
+                    <span class="social-label">YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Form (Visual Only) -->
+    <section class="message-section">
+        <div class="container">
+            <h2 class="section-title">Send a Message</h2>
+            <form class="message-form" id="messageForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Initialize pulse animation
+        initPulse();
+        
+        // Handle form submission (visual only)
+        document.getElementById('messageForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('This is a visual-only form. Please reach out via email or social media.');
+        });
+    </script>
+</body>
+</html>
+

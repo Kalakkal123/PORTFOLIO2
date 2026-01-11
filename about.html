@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - T Karthikeyan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">KK</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌓</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Header -->
+    <section class="about-header">
+        <canvas id="circuitCanvas" class="circuit-canvas"></canvas>
+        <div class="container">
+            <div class="about-intro">
+                <h1 class="page-title">About Me</h1>
+                <p class="intro-text">
+                    I'm passionate about creating web experiences that feel intuitive and responsive, 
+                    building ESP32 systems that solve real-world problems, and developing games that 
+                    engage and challenge. I believe in clean code, thoughtful design, and the power 
+                    of combining technical skills with creative thinking.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Image Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-image-wrapper">
+                <img src="https://raw.githubusercontent.com/Kalakkal123/PORTFOLIO/refs/heads/main/file_00000000ab7c72069271469ca3aa9c04.png" 
+                     alt="T Karthikeyan" 
+                     class="profile-img-large">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">ESP32</span>
+                <span class="skill-tag">Arduino</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Web Design</span>
+                <span class="skill-tag">2D Game Dev</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">UI Development</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Web Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">ESP32 Builds</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Games & Simulations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="section-title">Check Out My Work</h2>
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Initialize circuit animation
+        initCircuit();
+    </script>
+</body>
+</html>
+
