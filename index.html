@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T Karthikeyan - Developer / Creator / Innovator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">KK</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌓</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hey, I'm <span class="highlight">T Karthikeyan</span></h1>
+                <p class="hero-role">Developer / Creator / Innovator</p>
+                <p class="hero-description">
+                    Building web experiences, ESP32 systems, and games. 
+                    Where UI logic meets creativity.
+                </p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn btn-primary">About Me</a>
+                    <a href="projects.html" class="btn btn-secondary">View Projects</a>
+                    <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://raw.githubusercontent.com/Kalakkal123/PORTFOLIO/refs/heads/main/file_00000000ab7c72069271469ca3aa9c04.png" 
+                     alt="T Karthikeyan" 
+                     class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">ESP32</span>
+                <span class="skill-tag">Arduino</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Web Design</span>
+                <span class="skill-tag">2D Game Dev</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">UI Development</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-preview-content">
+                <h2 class="section-title">About</h2>
+                <p class="about-text">
+                    I'm passionate about creating web experiences that feel intuitive, 
+                    building ESP32 systems that solve real problems, and developing games 
+                    that engage. I believe in clean code, thoughtful design, and the power 
+                    of combining technical skills with creative thinking.
+                </p>
+                <a href="about.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Initialize particle animation
+        initParticles();
+    </script>
+</body>
+</html>
